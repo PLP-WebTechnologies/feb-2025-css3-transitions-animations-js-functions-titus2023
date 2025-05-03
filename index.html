@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced Interactive Project</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Enhanced Interactive Project ✨</h1>
+
+  <!-- Animated Button -->
+  <button id="colorButton">Click for Color!</button>
+
+  <!-- Animated Box -->
+  <div class="box" id="animatedBox"></div>
+  <button onclick="moveBox()">Move Box</button>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab active" onclick="openTab('one')">Tab 1</button>
+    <button class="tab" onclick="openTab('two')">Tab 2</button>
+  </div>
+  <div id="one" class="tab-content show">Welcome to Tab 1!</div>
+  <div id="two" class="tab-content">You're now in Tab 2!</div>
+
+  <!-- Form with LocalStorage -->
+  <form id="userForm">
+    <input type="text" id="username" placeholder="Your Name" required />
+    <span id="nameFeedback" class="feedback"></span><br/>
+
+    <input type="email" id="useremail" placeholder="Your Email" required />
+    <span id="emailFeedback" class="feedback"></span><br/>
+
+    <button type="submit">Save Info</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
